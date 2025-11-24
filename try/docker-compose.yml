@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  mypython:
+    build: .
+    container_name: hateslop3_env
+    volumes:
+      - .:/app        # 현재 폴더를 컨테이너에 마운트
+    tty: true          # bash 활성화
+    stdin_open: true   # 인터랙티브 셸 가능
